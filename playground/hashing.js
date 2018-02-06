@@ -10,6 +10,16 @@ var password = '123abc!';
 //   });
 // });
 
+// bcrypt.genSalt(10, (err, salt) => {
+//   bcrypt.hash(password, salt, (err, hash) => {
+//     console.log(hash);
+//     var hashedPassword = hash;
+//     bcrypt.compare(password, hashedPassword, (err, res) => {
+//       console.log(res);
+//   });
+// });
+// });
+
 var hashedPassword = '$2a$10$LHreGgBlU2IzRPIJuIi61.DgjGio4nDUBS6xU4NEMH6MsXZ5owt4u';
 
 bcrypt.compare(password, hashedPassword, (err, res) => {
